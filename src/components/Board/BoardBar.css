@@ -1,0 +1,10 @@
+.board__bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 4px 4px 8px;
+}
+
+.board__bar-right {
+  display: inherit;
+  float: right;
+}
