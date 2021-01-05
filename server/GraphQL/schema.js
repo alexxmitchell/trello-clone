@@ -4,7 +4,7 @@ const typeDefs = gql`
   type User {
     id: ID!
     email: String!
-    name: String!
+    name: String
     token: String
     boards: [Board]!
   }
@@ -31,7 +31,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    login(email: String, password: String): User
+    loginUser(email: String, password: String): User
   }
 `
 

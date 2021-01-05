@@ -22,8 +22,8 @@ class UserAPI extends DataSource {
     const email = this.context && this.context.user ? this.context.user.email : emailArg;
 
     const results = await firebase.auth().signInWithEmailAndPassword(email, password);
-    const user = await results.user;
-    
+    const {user} = await results;
+    user.id = user.uid;
     return user;
   }
 }

@@ -1,5 +1,6 @@
 require("dotenv").config();
 const { ApolloServer } = require("apollo-server");
+require('./firebase.js');
 
 const port = process.env.PORT || 3000;
 
